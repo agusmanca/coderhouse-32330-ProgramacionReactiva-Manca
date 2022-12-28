@@ -1,0 +1,39 @@
+{
+    "alumnos": [
+                {
+                    "nombre": "Agustin",
+                    "apellido": "Test",
+                    "edad": 33,
+                    "fechaNacimiento": "",
+                    "pais": "Argentina"
+                },
+                {
+                    "nombre": "John",
+                    "apellido": "Doe",
+                    "edad": 25,
+                    "fechaNacimiento": "",
+                    "pais": "Estados Unidos"
+                },  
+                {
+                    "nombre": "Leonel",
+                    "apellido": "Messi",
+                    "edad": 34,
+                    "fechaNacimiento": "",
+                    "pais": "Argentina"
+                },  
+                {
+                    "nombre": "Carlos",
+                    "apellido": "Gomez",
+                    "edad": 28,
+                    "fechaNacimiento": "",
+                    "pais": "Mexico"
+                },  
+                {
+                    "nombre": "Ricardo",
+                    "apellido": "Guemes",
+                    "edad": 40,
+                    "fechaNacimiento": "",
+                    "pais": "Peru"
+                }
+            ]
+}

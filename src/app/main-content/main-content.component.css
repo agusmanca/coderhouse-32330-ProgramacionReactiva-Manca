@@ -1,0 +1,25 @@
+
+.container-style {
+    display: flex;
+    flex-direction: row;
+}
+
+.card-style {
+    margin: 10px;
+    width: 60%;
+}
+
+.img-conteiner {
+    width: 100%;
+}
+
+.flag-img-size {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+.example-header-image {
+    background-image: url('https://clipground.com/images/img_avatar-png-2.png');
+    background-size: cover;
+}

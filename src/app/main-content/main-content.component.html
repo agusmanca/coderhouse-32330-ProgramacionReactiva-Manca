@@ -1,0 +1,27 @@
+<div>
+    <div class="container-style" *ngIf="showTable" >
+        <mat-card class="card-style" *ngFor="let alumno of alumnos$ | async">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Datos Alumno</mat-card-title>
+            <mat-card-subtitle>Nombre: {{ alumno.nombre | titlecase }} </mat-card-subtitle><br>
+            <mat-card-subtitle>Apellido: {{ alumno.apellido | titlecase }}</mat-card-subtitle><br>
+          </mat-card-header>
+          
+          <div class="img-conteiner">
+            <img [src]="getBanderaPorId(alumno.pais) | async" class="flag-img-size" alt="">
+          </div>
+          
+          <mat-card-content>
+            <br>
+            <div>Edad: {{ alumno.edad | edad:alumno.edad }} </div>
+            <div>Fecha nancimiento {{ alumno.fechaNacimiento | date:'dd/MM/yyyy' }}</div>
+          </mat-card-content>
+        </mat-card>
+    </div>
+
+    <div>
+        <button mat-button color="primary" (click)="subscribe()">Subscribir Lista</button>
+        <button mat-button color="warn" (click)="showTable=false">Destruir Lista</button>
+    </div>
+</div>
